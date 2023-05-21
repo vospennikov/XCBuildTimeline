@@ -64,7 +64,7 @@ struct ProjectBuild: View {
     
     private func openXcodeAction() {
         do {
-            try shell(.xed("\(workspace)"))
+            try shell(.xed("\(workspace.path())"))
         } catch {
             viewError = ViewError(failureReason: error.localizedDescription)
         }
