@@ -16,8 +16,8 @@ struct TimelineFileSelection: View {
     @State
     private var isPresentedError = false
     
-    @Injected(\.timelineParser)
-    private var builtTimeLogParser: TimelineParser
+    @Injected(\.logEntityParser)
+    private var logEntityParser: LogEntityParser
     
     var body: some View {
         HStack {
@@ -51,7 +51,7 @@ struct TimelineFileSelection: View {
         
         switch panel.runModal() {
             case .OK:
-                guard let url = panel.url, builtTimeLogParser.canReadFile(url) else {
+                guard let url = panel.url, logEntityParser.canReadFile(url) else {
                     return
                 }
                 timelineFile = url
@@ -70,7 +70,7 @@ struct TimelineFileSelection: View {
                 viewError = ViewError(failureReason: providerError.localizedDescription)
                 return
             }
-            guard let itemProviderReading, builtTimeLogParser.canReadFile(itemProviderReading) else {
+            guard let itemProviderReading, logEntityParser.canReadFile(itemProviderReading) else {
                 return
             }
             timelineFile = itemProviderReading

@@ -11,15 +11,19 @@ struct TimelineSection: View {
     @State
     private var timelineFile: URL?
     
-    @Injected(\.timelineParser)
-    private var timelineParser: TimelineParser
+    @Injected(\.logEntityParser)
+    private var logEntityParser: LogEntityParser
+    
+    @Injected(\.timelineMapper)
+    private var timelineMapper: TimelineMapper
     
     var body: some View {
         Section("Timeline") {
             TimelineFileSelection(timelineFile: $timelineFile)
             
-            if let timelineFile, let timeline = try? timelineParser.read(timelineFile) {
-                NavigationLink("Show charts", value: timeline)
+            if let timelineFile,
+               let logEntities = try? logEntityParser.read(timelineFile) {
+                NavigationLink("Show charts", value: timelineMapper.map(logEntities))
             }
         }
     }

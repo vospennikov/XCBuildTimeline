@@ -22,7 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		DD2237AD2A10028300B4E8D9 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2237AC2A10028300B4E8D9 /* Timeline.swift */; };
-		DD2237AE2A1002CB00B4E8D9 /* TimelineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2237A62A10001A00B4E8D9 /* TimelineParser.swift */; };
+		DD2237AE2A1002CB00B4E8D9 /* LogEntityParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2237A62A10001A00B4E8D9 /* LogEntityParser.swift */; };
 		DD4AEFF729FC12AD008C29B7 /* RootProjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AEFF629FC12AD008C29B7 /* RootProjectSelection.swift */; };
 		DD4AEFF929FC1533008C29B7 /* BuildTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AEFF829FC1533008C29B7 /* BuildTimeline.swift */; };
 		DD4AEFFC29FC1A93008C29B7 /* FileFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AEFFB29FC1A93008C29B7 /* FileFinder.swift */; };
@@ -38,6 +38,7 @@
 		DD96C5CB2A18D1C3003C4496 /* TimelineSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD96C5CA2A18D1C3003C4496 /* TimelineSection.swift */; };
 		DD96C5D02A18D435003C4496 /* ShellExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD96C5CF2A18D435003C4496 /* ShellExecutor.swift */; };
 		DD96C5D22A18D8F1003C4496 /* ProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD96C5D12A18D8F1003C4496 /* ProjectsList.swift */; };
+		DD9BCEB22A1FC46200928ED3 /* TimelineMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9BCEB12A1FC46200928ED3 /* TimelineMapper.swift */; };
 		DDAA45702A0154EB0076765A /* SchemeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA456F2A0154EB0076765A /* SchemeSelection.swift */; };
 		DDD2128F2A0167A5006483A4 /* XcodeprojParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2128E2A0167A5006483A4 /* XcodeprojParser.swift */; };
 		DDE0A4CC2A134CD600B881D9 /* Shell in Frameworks */ = {isa = PBXBuildFile; productRef = DDE0A4CB2A134CD600B881D9 /* Shell */; };
@@ -57,7 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD2237A62A10001A00B4E8D9 /* TimelineParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
+		DD2237A62A10001A00B4E8D9 /* LogEntityParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEntityParser.swift; sourceTree = "<group>"; };
 		DD2237AC2A10028300B4E8D9 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		DD4AEFF629FC12AD008C29B7 /* RootProjectSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProjectSelection.swift; sourceTree = "<group>"; };
 		DD4AEFF829FC1533008C29B7 /* BuildTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTimeline.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		DD96C5CA2A18D1C3003C4496 /* TimelineSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineSection.swift; sourceTree = "<group>"; };
 		DD96C5CF2A18D435003C4496 /* ShellExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
 		DD96C5D12A18D8F1003C4496 /* ProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsList.swift; sourceTree = "<group>"; };
+		DD9BCEB12A1FC46200928ED3 /* TimelineMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineMapper.swift; sourceTree = "<group>"; };
 		DDAA456F2A0154EB0076765A /* SchemeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeSelection.swift; sourceTree = "<group>"; };
 		DDB16D592A1A72DB006BE9B3 /* XCBuildTimeline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCBuildTimeline.entitlements; sourceTree = "<group>"; };
 		DDD2128E2A0167A5006483A4 /* XcodeprojParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeprojParser.swift; sourceTree = "<group>"; };
@@ -144,7 +146,8 @@
 		DD7E2C562A190DEA005FC956 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DD2237A62A10001A00B4E8D9 /* TimelineParser.swift */,
+				DD9BCEB12A1FC46200928ED3 /* TimelineMapper.swift */,
+				DD2237A62A10001A00B4E8D9 /* LogEntityParser.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -395,7 +398,7 @@
 				DD96C5C82A18D02E003C4496 /* Dependencies.swift in Sources */,
 				FD9D24AE2A0CE06300AFC8E9 /* ProjectBuild.swift in Sources */,
 				DD4AEFFC29FC1A93008C29B7 /* FileFinder.swift in Sources */,
-				DD2237AE2A1002CB00B4E8D9 /* TimelineParser.swift in Sources */,
+				DD2237AE2A1002CB00B4E8D9 /* LogEntityParser.swift in Sources */,
 				DD96C5D02A18D435003C4496 /* ShellExecutor.swift in Sources */,
 				FDA36F932A0D316D00041A60 /* TimelineFileSelection.swift in Sources */,
 				FD744F372A05562E00F180EC /* Injected.swift in Sources */,
@@ -408,6 +411,7 @@
 				DDAA45702A0154EB0076765A /* SchemeSelection.swift in Sources */,
 				DD96C5C52A18CD20003C4496 /* SettingsSection.swift in Sources */,
 				DD6E7FA729F8F81D00DEA7BA /* XCBuildTimelineApp.swift in Sources */,
+				DD9BCEB22A1FC46200928ED3 /* TimelineMapper.swift in Sources */,
 				DD96C5D22A18D8F1003C4496 /* ProjectsList.swift in Sources */,
 				FD744F1E2A05273000F180EC /* Collection.swift in Sources */,
 				DD96C5CB2A18D1C3003C4496 /* TimelineSection.swift in Sources */,

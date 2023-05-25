@@ -14,9 +14,9 @@ extension InjectedValues {
         set { Self[FileFinderKey.self] = newValue }
     }
     
-    var timelineParser: TimelineParser {
-        get { Self[TimelineParserKey.self] }
-        set { Self[TimelineParserKey.self] = newValue }
+    var logEntityParser: LogEntityParser {
+        get { Self[LogEntityParserKey.self] }
+        set { Self[LogEntityParserKey.self] = newValue }
     }
     
     var shellExecutor: Shell {
@@ -32,5 +32,10 @@ extension InjectedValues {
     var timlineScriptInstaller: TimlineScriptInstaller {
         get { Self[TimlineScriptInstallerKey.self] }
         set { Self[TimlineScriptInstallerKey.self] = newValue }
+    }
+    
+    var timelineMapper: TimelineMapper {
+        get { Self[TimelineMapperKey.self] }
+        set { Self[TimelineMapperKey.self] = newValue }
     }
 }
