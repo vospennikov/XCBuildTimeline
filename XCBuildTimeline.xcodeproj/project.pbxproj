@@ -29,7 +29,7 @@
 		DD6E7FA729F8F81D00DEA7BA /* XCBuildTimelineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E7FA629F8F81D00DEA7BA /* XCBuildTimelineApp.swift */; };
 		DD6E7FAB29F8F81E00DEA7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6E7FAA29F8F81E00DEA7BA /* Assets.xcassets */; };
 		DD6E7FB729F8FCC400DEA7BA /* XcodeProj in Frameworks */ = {isa = PBXBuildFile; productRef = DD6E7FB629F8FCC400DEA7BA /* XcodeProj */; };
-		DD6E7FB929F8FD1000DEA7BA /* TimlineScriptInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E7FB829F8FD1000DEA7BA /* TimlineScriptInstaller.swift */; };
+		DD6E7FB929F8FD1000DEA7BA /* TimelineScriptInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E7FB829F8FD1000DEA7BA /* TimelineScriptInstaller.swift */; };
 		DD7E2C582A1929CD005FC956 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E2C572A1929CD005FC956 /* Settings.swift */; };
 		DD96C5BD2A18A83E003C4496 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD96C5BC2A18A83E003C4496 /* AppNavigation.swift */; };
 		DD96C5C22A18B80A003C4496 /* EnvironmentValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD96C5C12A18B80A003C4496 /* EnvironmentValues.swift */; };
@@ -66,7 +66,7 @@
 		DD6E7FA329F8F81D00DEA7BA /* XCBuildTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCBuildTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6E7FA629F8F81D00DEA7BA /* XCBuildTimelineApp.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = XCBuildTimelineApp.swift; sourceTree = "<group>"; tabWidth = 4; };
 		DD6E7FAA29F8F81E00DEA7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD6E7FB829F8FD1000DEA7BA /* TimlineScriptInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimlineScriptInstaller.swift; sourceTree = "<group>"; };
+		DD6E7FB829F8FD1000DEA7BA /* TimelineScriptInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScriptInstaller.swift; sourceTree = "<group>"; };
 		DD7E2C572A1929CD005FC956 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DD96C5BC2A18A83E003C4496 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		DD96C5C12A18B80A003C4496 /* EnvironmentValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentValues.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4AEFFB29FC1A93008C29B7 /* FileFinder.swift */,
-				DD6E7FB829F8FD1000DEA7BA /* TimlineScriptInstaller.swift */,
+				DD6E7FB829F8FD1000DEA7BA /* TimelineScriptInstaller.swift */,
 				DDD2128E2A0167A5006483A4 /* XcodeprojParser.swift */,
 				DD96C5CF2A18D435003C4496 /* ShellExecutor.swift */,
 			);
@@ -404,7 +404,7 @@
 				FD744F372A05562E00F180EC /* Injected.swift in Sources */,
 				DD96C5C22A18B80A003C4496 /* EnvironmentValues.swift in Sources */,
 				FDFAFF032A04FCA700824299 /* ProjectSettingsView.swift in Sources */,
-				DD6E7FB929F8FD1000DEA7BA /* TimlineScriptInstaller.swift in Sources */,
+				DD6E7FB929F8FD1000DEA7BA /* TimelineScriptInstaller.swift in Sources */,
 				DD4AEFF729FC12AD008C29B7 /* RootProjectSelection.swift in Sources */,
 				FD744F272A054E0200F180EC /* AlertError.swift in Sources */,
 				FD744F2F2A05548E00F180EC /* ProjectModification.swift in Sources */,

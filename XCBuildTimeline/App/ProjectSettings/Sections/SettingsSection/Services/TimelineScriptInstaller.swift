@@ -1,5 +1,5 @@
 //
-//  TimlineScriptInstaller.swift
+//  TimelineScriptInstaller.swift
 //  XCBuildTimeline
 //
 //  Created by Mikhail Vospennikov on 26.04.2023.
@@ -9,13 +9,13 @@ import Foundation
 import XcodeProj
 import PathKit
 
-struct TimlineScriptInstaller {
+struct TimelineScriptInstaller {
     var install: (_ root: URL, _ project: URL) throws -> Void
     var uninstall: (_ project: URL) throws -> Void
 }
 
-struct TimlineScriptInstallerKey: InjectionKey {
-    static var currentValue = TimlineScriptInstaller(
+struct TimelineScriptInstallerKey: InjectionKey {
+    static var currentValue = TimelineScriptInstaller(
         install: { root, project in
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "dd.MM_HH:mm"

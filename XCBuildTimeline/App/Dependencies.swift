@@ -29,9 +29,9 @@ extension InjectedValues {
         set { Self[XcodeprojParserKey.self] = newValue }
     }
     
-    var timlineScriptInstaller: TimlineScriptInstaller {
-        get { Self[TimlineScriptInstallerKey.self] }
-        set { Self[TimlineScriptInstallerKey.self] = newValue }
+    var timelineScriptInstaller: TimelineScriptInstaller {
+        get { Self[TimelineScriptInstallerKey.self] }
+        set { Self[TimelineScriptInstallerKey.self] = newValue }
     }
     
     var timelineMapper: TimelineMapper {

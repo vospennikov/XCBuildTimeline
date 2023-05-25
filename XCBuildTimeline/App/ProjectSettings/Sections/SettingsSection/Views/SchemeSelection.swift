@@ -23,19 +23,19 @@ struct SchemeSelection: View {
                     Text(workspace.lastPathComponent)
                 }
             }
-            textPicker(promt: "Scheme", values: schemes, binding: $selectedScheme)
+            textPicker(prompt: "Scheme", values: schemes, binding: $selectedScheme)
         }
         .labelsHidden()
     }
     
     @ViewBuilder
-    private func textPicker(promt: String, values: [String], binding: Binding<String>) -> some View {
+    private func textPicker(prompt: String, values: [String], binding: Binding<String>) -> some View {
         if values.isEmpty || binding.wrappedValue.isEmpty {
-            TextField(text: binding, prompt: Text(promt), label: { Text(promt) })
+            TextField(text: binding, prompt: Text(prompt), label: { Text(prompt) })
                 .lineLimit(1)
                 .autocorrectionDisabled()
         } else {
-            Picker(promt, selection: binding) {
+            Picker(prompt, selection: binding) {
                 ForEach(values, id: \.self) { value in
                     Text(value)
                 }

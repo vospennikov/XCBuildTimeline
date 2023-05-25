@@ -11,20 +11,20 @@ struct ProjectModification: View {
     var root: URL?
     var projects: [URL]
     
-    @Injected(\.timlineScriptInstaller)
-    private var scriptInstaller: TimlineScriptInstaller
+    @Injected(\.timelineScriptInstaller)
+    private var timelineScriptInstaller: TimelineScriptInstaller
     
     var body: some View {
         HStack {
             Button("Install scripts", action: {
                 guard let root else { return }
                 projects.forEach {
-                    try? scriptInstaller.install(root, $0)
+                    try? timelineScriptInstaller.install(root, $0)
                 }
             })
             Button("Uninstall scripts", action: {
                 projects.forEach {
-                    try? scriptInstaller.uninstall($0)
+                    try? timelineScriptInstaller.uninstall($0)
                 }
             })
         }
