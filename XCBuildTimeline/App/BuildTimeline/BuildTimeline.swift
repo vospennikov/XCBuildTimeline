@@ -29,7 +29,7 @@ struct BuildTimeline: View {
         }
     }
     
-    var chart: some View {
+    private var chart: some View {
         Chart {
             ForEach(timeline.bars) { bar in
                 BarMark(
@@ -45,21 +45,16 @@ struct BuildTimeline: View {
                     .lineStyle(StrokeStyle(lineWidth: 1, dash: [3]))
             }
             
-            if let selectedTarget {
+            if let selectedTarget,
+               let selectedBar = timeline.bars.first(where: { bar in bar.name == selectedTarget}) {
                 RectangleMark(y: .value("Target", selectedTarget))
                     .foregroundStyle(.primary.opacity(0.2))
-                    .annotation {
-                        VStack {
-                            Text(selectedTarget)
-                            if let selectedBar = timeline.bars.first(where: { bar in
-                                bar.name == selectedTarget
-                            }) {
-                                Text("start: \(selectedBar.start) – finish: \(selectedBar.end)")
-                            }
-                        }
-                        .padding(6)
-                        .background(Color(nsColor: .controlBackgroundColor).opacity(0.5))
-                        .cornerRadius(8)
+                    .annotation(position: .automatic, alignment: .center, spacing: 10) {
+                        TargetAnnotation(
+                            name: selectedBar.name,
+                            startTime: selectedBar.start,
+                            finishTime: selectedBar.end
+                        )
                     }
             }
         }
