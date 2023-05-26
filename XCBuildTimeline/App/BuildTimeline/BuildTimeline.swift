@@ -137,24 +137,41 @@ struct BuildTimeline: View {
     }
 }
 
+private extension BuildTimeline {
+    init(timeline: Timeline, selectedTarget: String? = nil, ruleTarget: Int? = nil) {
+        self.timeline = timeline
+        self._selectedTarget = State(initialValue: selectedTarget)
+        self._ruleTarget = State(initialValue: ruleTarget)
+    }
+}
+
 struct BuildTimeline_Previews: PreviewProvider {
     static var previews: some View {
-        BuildTimeline(timeline: Timeline(bars: [
-            .init(name: "FeatureA1", start: 0, end: 14),
-            .init(name: "FeatureA2", start: 0, end: 16),
-            .init(name: "FeatureA3", start: 0, end: 13),
-            .init(name: "FeatureA4", start: 0, end: 15),
-            .init(name: "VeryLongFeatureName", start: 4, end: 20),
-            .init(name: "FeatureB2", start: 4, end: 18),
-            .init(name: "FeatureB3", start: 4, end: 17),
-            .init(name: "Short", start: 17, end: 20),
-            .init(name: "FeatureC2", start: 18, end: 24),
-            .init(name: "FeatureC3", start: 20, end: 22),
-            .init(name: "FeatureC4", start: 22, end: 24),
-            .init(name: "FeatureD1", start: 24, end: 36),
-            .init(name: "FeatureD2", start: 24, end: 39),
-            .init(name: "FeatureC", start: 39, end: 41),
-            .init(name: "FeatureE", start: 41, end: 48),
-        ]))
+        let timeline = Timeline(
+            bars: [
+                .init(name: "FeatureA1", start: 0, end: 14),
+                .init(name: "FeatureA2", start: 0, end: 16),
+                .init(name: "FeatureA3", start: 0, end: 13),
+                .init(name: "VeryLongFeatureName", start: 4, end: 20),
+                .init(name: "FeatureB2", start: 4, end: 18),
+                .init(name: "Short", start: 18, end: 20),
+                .init(name: "FeatureC2", start: 18, end: 24),
+                .init(name: "FeatureC3", start: 20, end: 22),
+                .init(name: "FeatureC4", start: 22, end: 24),
+                .init(name: "FeatureD1", start: 24, end: 36),
+                .init(name: "FeatureD2", start: 24, end: 39),
+                .init(name: "FeatureC", start: 39, end: 41),
+                .init(name: "FeatureE", start: 41, end: 48),
+            ]
+        )
+        
+        VStack {
+            BuildTimeline(timeline: timeline, selectedTarget: "FeatureA1", ruleTarget: 14)
+            BuildTimeline(timeline: timeline, selectedTarget: "FeatureC2", ruleTarget: 18)
+            BuildTimeline(timeline: timeline, selectedTarget: "FeatureE", ruleTarget: 41)
+        }
+        .padding(.horizontal)
+        .padding(.vertical, 40)
+        .previewLayout(.fixed(width: 500, height: 1100))
     }
 }
