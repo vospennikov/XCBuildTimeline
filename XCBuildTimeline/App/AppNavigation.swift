@@ -13,7 +13,7 @@ struct AppNavigation<Content: View>: View {
     var body: some View {
         NavigationStack {
             rootContent()
-                .navigationDestination(for: Timeline.self, destination: { timeline in
+                .navigationDestination(for: BuildTimeline.ChartData.self, destination: { timeline in
                     BuildTimeline(timeline: timeline)
                 })
         }

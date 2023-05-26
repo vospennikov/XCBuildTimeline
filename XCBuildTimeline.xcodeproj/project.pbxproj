@@ -21,11 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		DD2237AD2A10028300B4E8D9 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2237AC2A10028300B4E8D9 /* Timeline.swift */; };
+		DD2237AD2A10028300B4E8D9 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2237AC2A10028300B4E8D9 /* ChartData.swift */; };
 		DD2237AE2A1002CB00B4E8D9 /* LogEntityParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2237A62A10001A00B4E8D9 /* LogEntityParser.swift */; };
 		DD4AEFF729FC12AD008C29B7 /* RootProjectSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AEFF629FC12AD008C29B7 /* RootProjectSelection.swift */; };
 		DD4AEFF929FC1533008C29B7 /* BuildTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AEFF829FC1533008C29B7 /* BuildTimeline.swift */; };
 		DD4AEFFC29FC1A93008C29B7 /* FileFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4AEFFB29FC1A93008C29B7 /* FileFinder.swift */; };
+		DD5103A92A211DF9008704FE /* TimelineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5103A82A211DF9008704FE /* TimelineChart.swift */; };
 		DD6E7FA729F8F81D00DEA7BA /* XCBuildTimelineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6E7FA629F8F81D00DEA7BA /* XCBuildTimelineApp.swift */; };
 		DD6E7FAB29F8F81E00DEA7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6E7FAA29F8F81E00DEA7BA /* Assets.xcassets */; };
 		DD6E7FB729F8FCC400DEA7BA /* XcodeProj in Frameworks */ = {isa = PBXBuildFile; productRef = DD6E7FB629F8FCC400DEA7BA /* XcodeProj */; };
@@ -60,10 +61,11 @@
 
 /* Begin PBXFileReference section */
 		DD2237A62A10001A00B4E8D9 /* LogEntityParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEntityParser.swift; sourceTree = "<group>"; };
-		DD2237AC2A10028300B4E8D9 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		DD2237AC2A10028300B4E8D9 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		DD4AEFF629FC12AD008C29B7 /* RootProjectSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProjectSelection.swift; sourceTree = "<group>"; };
 		DD4AEFF829FC1533008C29B7 /* BuildTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTimeline.swift; sourceTree = "<group>"; };
 		DD4AEFFB29FC1A93008C29B7 /* FileFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFinder.swift; sourceTree = "<group>"; };
+		DD5103A82A211DF9008704FE /* TimelineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineChart.swift; sourceTree = "<group>"; };
 		DD6E7FA329F8F81D00DEA7BA /* XCBuildTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCBuildTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6E7FA629F8F81D00DEA7BA /* XCBuildTimelineApp.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = XCBuildTimelineApp.swift; sourceTree = "<group>"; tabWidth = 4; };
 		DD6E7FAA29F8F81E00DEA7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,7 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9BCEB52A1FCE4D00928ED3 /* Views */,
-				DD2237AC2A10028300B4E8D9 /* Timeline.swift */,
+				DD2237AC2A10028300B4E8D9 /* ChartData.swift */,
 				DD4AEFF829FC1533008C29B7 /* BuildTimeline.swift */,
 			);
 			path = BuildTimeline;
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9BCEB32A1FCC9100928ED3 /* TargetAnnotation.swift */,
+				DD5103A82A211DF9008704FE /* TimelineChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,8 +429,9 @@
 				DD9BCEB22A1FC46200928ED3 /* TimelineMapper.swift in Sources */,
 				DD96C5D22A18D8F1003C4496 /* ProjectsList.swift in Sources */,
 				FD744F1E2A05273000F180EC /* Collection.swift in Sources */,
+				DD5103A92A211DF9008704FE /* TimelineChart.swift in Sources */,
 				DD96C5CB2A18D1C3003C4496 /* TimelineSection.swift in Sources */,
-				DD2237AD2A10028300B4E8D9 /* Timeline.swift in Sources */,
+				DD2237AD2A10028300B4E8D9 /* ChartData.swift in Sources */,
 				DD4AEFF929FC1533008C29B7 /* BuildTimeline.swift in Sources */,
 				FD9D24B02A0CE77E00AFC8E9 /* OptionalBinding.swift in Sources */,
 				FD744F292A05530E00F180EC /* DebouncedOnChange.swift in Sources */,
@@ -581,7 +585,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=100 -Xfrontend -warn-long-expression-type-checking=100";
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-function-bodies=50 -Xfrontend -warn-long-expression-type-checking=50";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.vospennikov.XCBuildTimeline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
