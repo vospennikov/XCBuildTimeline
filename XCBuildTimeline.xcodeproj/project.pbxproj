@@ -399,7 +399,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which periphery >/dev/null; then\n    periphery scan --project XcodeBuiltTimes.xcodeproj --schemes XcodeBuiltTimes --targets XcodeBuiltTimes --format xcode\nelse\n    echo \"warning: Periphery not installed, download from https://github.com/peripheryapp/periphery\"\nfi\n";
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which periphery >/dev/null; then\n    periphery scan --project XCBuildTimeline.xcodeproj --schemes XCBuildTimeline --targets XCBuildTimeline --format xcode\nelse\n    echo \"warning: Periphery not installed, download from https://github.com/peripheryapp/periphery\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
