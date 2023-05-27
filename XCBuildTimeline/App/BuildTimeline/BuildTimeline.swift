@@ -14,6 +14,9 @@ struct BuildTimeline: View {
     @Environment(\.displayScale)
     private var scale
     
+    @State
+    private var viewSize: CGSize = .zero
+    
     var body: some View {
         ScrollView {
             timelineChart
@@ -21,6 +24,9 @@ struct BuildTimeline: View {
                 .toolbar {
                     Button("Share", action: { shareTimelineImage() })
                 }
+        }
+        .readSize { newSize in
+            viewSize = newSize
         }
     }
     
@@ -41,7 +47,7 @@ struct BuildTimeline: View {
         if response == .OK {
             let modifiedImage = timelineChart
                 .background { Color.white }
-                .frame(width: 2000)
+                .frame(width: viewSize.width)
             
             let renderer = ImageRenderer(content: modifiedImage)
             renderer.scale = scale
