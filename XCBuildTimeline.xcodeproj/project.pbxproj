@@ -47,14 +47,11 @@
 		FD744F1A2A05124B00F180EC /* ViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F192A05124B00F180EC /* ViewError.swift */; };
 		FD744F1E2A05273000F180EC /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F1D2A05273000F180EC /* Collection.swift */; };
 		FD744F272A054E0200F180EC /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F262A054E0200F180EC /* AlertError.swift */; };
-		FD744F292A05530E00F180EC /* DebouncedOnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F282A05530E00F180EC /* DebouncedOnChange.swift */; };
-		FD744F2C2A05539E00F180EC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F2B2A05539E00F180EC /* Task.swift */; };
 		FD744F2F2A05548E00F180EC /* ProjectModification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F2E2A05548E00F180EC /* ProjectModification.swift */; };
 		FD744F332A0555B100F180EC /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F322A0555B100F180EC /* InjectionKey.swift */; };
 		FD744F352A05560B00F180EC /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F342A05560B00F180EC /* InjectedValues.swift */; };
 		FD744F372A05562E00F180EC /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD744F362A05562E00F180EC /* Injected.swift */; };
 		FD9D24AE2A0CE06300AFC8E9 /* ProjectBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D24AD2A0CE06300AFC8E9 /* ProjectBuild.swift */; };
-		FD9D24B02A0CE77E00AFC8E9 /* OptionalBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9D24AF2A0CE77E00AFC8E9 /* OptionalBinding.swift */; };
 		FDA36F932A0D316D00041A60 /* TimelineFileSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA36F922A0D316D00041A60 /* TimelineFileSelection.swift */; };
 		FDFAFF032A04FCA700824299 /* ProjectSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFAFF022A04FCA700824299 /* ProjectSettingsView.swift */; };
 /* End PBXBuildFile section */
@@ -86,14 +83,11 @@
 		FD744F192A05124B00F180EC /* ViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewError.swift; sourceTree = "<group>"; };
 		FD744F1D2A05273000F180EC /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		FD744F262A054E0200F180EC /* AlertError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
-		FD744F282A05530E00F180EC /* DebouncedOnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebouncedOnChange.swift; sourceTree = "<group>"; };
-		FD744F2B2A05539E00F180EC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FD744F2E2A05548E00F180EC /* ProjectModification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModification.swift; sourceTree = "<group>"; };
 		FD744F322A0555B100F180EC /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
 		FD744F342A05560B00F180EC /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
 		FD744F362A05562E00F180EC /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
 		FD9D24AD2A0CE06300AFC8E9 /* ProjectBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectBuild.swift; sourceTree = "<group>"; };
-		FD9D24AF2A0CE77E00AFC8E9 /* OptionalBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalBinding.swift; sourceTree = "<group>"; };
 		FDA36F922A0D316D00041A60 /* TimelineFileSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineFileSelection.swift; sourceTree = "<group>"; };
 		FDFAFF022A04FCA700824299 /* ProjectSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -274,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				FD744F1D2A05273000F180EC /* Collection.swift */,
-				FD744F2B2A05539E00F180EC /* Task.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -282,8 +275,6 @@
 		FD744F3F2A05594D00F180EC /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FD744F282A05530E00F180EC /* DebouncedOnChange.swift */,
-				FD9D24AF2A0CE77E00AFC8E9 /* OptionalBinding.swift */,
 				DD96C5C12A18B80A003C4496 /* EnvironmentValues.swift */,
 			);
 			path = SwiftUI;
@@ -433,12 +424,9 @@
 				DD96C5CB2A18D1C3003C4496 /* TimelineSection.swift in Sources */,
 				DD2237AD2A10028300B4E8D9 /* ChartData.swift in Sources */,
 				DD4AEFF929FC1533008C29B7 /* BuildTimeline.swift in Sources */,
-				FD9D24B02A0CE77E00AFC8E9 /* OptionalBinding.swift in Sources */,
-				FD744F292A05530E00F180EC /* DebouncedOnChange.swift in Sources */,
 				DD7E2C582A1929CD005FC956 /* Settings.swift in Sources */,
 				FD744F332A0555B100F180EC /* InjectionKey.swift in Sources */,
 				FD744F352A05560B00F180EC /* InjectedValues.swift in Sources */,
-				FD744F2C2A05539E00F180EC /* Task.swift in Sources */,
 				DD96C5BD2A18A83E003C4496 /* AppNavigation.swift in Sources */,
 				DDD2128F2A0167A5006483A4 /* XcodeprojParser.swift in Sources */,
 			);
