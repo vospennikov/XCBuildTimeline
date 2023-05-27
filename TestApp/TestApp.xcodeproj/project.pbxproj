@@ -164,14 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDE3743E29FACDE100C34CBA /* Build configuration list for PBXNativeTarget "TestApp" */;
 			buildPhases = (
-				94F976FE7B5B51A738F6DC8A /* Start */,
 				31B110DABE7629BEBD23E3B8 /* [CP] Check Pods Manifest.lock */,
 				DDE3742C29FACDE000C34CBA /* Sources */,
 				DDE3742D29FACDE000C34CBA /* Frameworks */,
 				DDE3742E29FACDE000C34CBA /* Resources */,
 				2031D82411D4C2B2097966AB /* [CP] Embed Pods Frameworks */,
 				DDBA792029FC2E0D00A198E5 /* Embed Frameworks */,
-				CDB729856827347B4B2FB6ED /* End */,
 			);
 			buildRules = (
 			);
@@ -297,34 +295,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		94F976FE7B5B51A738F6DC8A /* Start */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Start;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TIMESTAMP=`date +%s`\necho '{\"timestamp\": '$TIMESTAMP', \"target\": \"'$TARGET_NAME'\", \"event\": \"start\"}' >> '/Users/vospennikov/iOS/Internals/XcodeBuiltTimes/TestApp/build_times.json'\n";
-		};
-		CDB729856827347B4B2FB6ED /* End */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = End;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TIMESTAMP=`date +%s`\necho '{\"timestamp\": '$TIMESTAMP', \"target\": \"'$TARGET_NAME'\", \"event\": \"end\"}' >> '/Users/vospennikov/iOS/Internals/XcodeBuiltTimes/TestApp/build_times.json'";
 		};
 /* End PBXShellScriptBuildPhase section */
 

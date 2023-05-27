@@ -71,12 +71,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDBA791329FC2DC400A198E5 /* Build configuration list for PBXNativeTarget "FeatureA" */;
 			buildPhases = (
-				CBA208249A89D7772FAA5B99 /* Start */,
 				DDBA790729FC2DC400A198E5 /* Headers */,
 				DDBA790829FC2DC400A198E5 /* Sources */,
 				DDBA790929FC2DC400A198E5 /* Frameworks */,
 				DDBA790A29FC2DC400A198E5 /* Resources */,
-				0184D1253FCB9D8883FCA103 /* End */,
 			);
 			buildRules = (
 			);
@@ -129,37 +127,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0184D1253FCB9D8883FCA103 /* End */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = End;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TIMESTAMP=`date +%s`\necho '{\"timestamp\": '$TIMESTAMP', \"target\": \"'$TARGET_NAME'\", \"event\": \"end\"}' >> '/Users/vospennikov/iOS/Internals/XcodeBuiltTimes/TestApp/build_times.json'";
-		};
-		CBA208249A89D7772FAA5B99 /* Start */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Start;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TIMESTAMP=`date +%s`\necho '{\"timestamp\": '$TIMESTAMP', \"target\": \"'$TARGET_NAME'\", \"event\": \"start\"}' >> '/Users/vospennikov/iOS/Internals/XcodeBuiltTimes/TestApp/build_times.json'";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDBA790829FC2DC400A198E5 /* Sources */ = {
