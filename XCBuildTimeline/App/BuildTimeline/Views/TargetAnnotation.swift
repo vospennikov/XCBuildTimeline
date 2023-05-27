@@ -16,7 +16,7 @@ struct TargetAnnotation: View {
         VStack(alignment: .leading) {
             Text(name)
                 .font(.headline)
-            Text("start: \(startTime) – finish: \(finishTime)")
+            Text("start: \(startTime)s – finish: \(finishTime)s")
                 .font(.body)
         }
         .padding()
@@ -27,7 +27,7 @@ struct TargetAnnotation: View {
 struct TargetAnnotation_Previews: PreviewProvider {
     static var previews: some View {
         TargetAnnotation(
-            name: "Target",
+            name: "Feature A",
             startTime: 0,
             finishTime: 15
         )
