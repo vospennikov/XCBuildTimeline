@@ -144,8 +144,8 @@
 		DD7E2C562A190DEA005FC956 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DD9BCEB12A1FC46200928ED3 /* TimelineMapper.swift */,
 				DD2237A62A10001A00B4E8D9 /* LogEntityParser.swift */,
+				DD9BCEB12A1FC46200928ED3 /* TimelineMapper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -166,9 +166,9 @@
 		DD96C5BE2A18ADC2003C4496 /* BuildTimeline */ = {
 			isa = PBXGroup;
 			children = (
-				DD9BCEB52A1FCE4D00928ED3 /* Views */,
-				DD2237AC2A10028300B4E8D9 /* ChartData.swift */,
 				DD4AEFF829FC1533008C29B7 /* BuildTimeline.swift */,
+				DD2237AC2A10028300B4E8D9 /* ChartData.swift */,
+				DD9BCEB52A1FCE4D00928ED3 /* Views */,
 			);
 			path = BuildTimeline;
 			sourceTree = "<group>";
@@ -176,8 +176,8 @@
 		DD96C5C32A18CD10003C4496 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				DD96C5C92A18D193003C4496 /* TimelineSection */,
 				DD96C5C62A18CEF5003C4496 /* SettingsSection */,
+				DD96C5C92A18D193003C4496 /* TimelineSection */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -195,9 +195,9 @@
 		DD96C5C92A18D193003C4496 /* TimelineSection */ = {
 			isa = PBXGroup;
 			children = (
+				DD96C5CA2A18D1C3003C4496 /* TimelineSection.swift */,
 				DD7E2C562A190DEA005FC956 /* Services */,
 				DD7E2C552A190DE2005FC956 /* Views */,
-				DD96C5CA2A18D1C3003C4496 /* TimelineSection.swift */,
 			);
 			path = TimelineSection;
 			sourceTree = "<group>";
@@ -205,11 +205,11 @@
 		DD96C5CC2A18D337003C4496 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DD4AEFF629FC12AD008C29B7 /* RootProjectSelection.swift */,
 				FD9D24AD2A0CE06300AFC8E9 /* ProjectBuild.swift */,
 				FD744F2E2A05548E00F180EC /* ProjectModification.swift */,
-				DDAA456F2A0154EB0076765A /* SchemeSelection.swift */,
 				DD96C5D12A18D8F1003C4496 /* ProjectsList.swift */,
+				DD4AEFF629FC12AD008C29B7 /* RootProjectSelection.swift */,
+				DDAA456F2A0154EB0076765A /* SchemeSelection.swift */,
 				DD7E2C572A1929CD005FC956 /* Settings.swift */,
 			);
 			path = Views;
@@ -219,9 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				DD4AEFFB29FC1A93008C29B7 /* FileFinder.swift */,
+				DD96C5CF2A18D435003C4496 /* ShellExecutor.swift */,
 				DD6E7FB829F8FD1000DEA7BA /* TimelineScriptInstaller.swift */,
 				DDD2128E2A0167A5006483A4 /* XcodeprojParser.swift */,
-				DD96C5CF2A18D435003C4496 /* ShellExecutor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				FD744F312A0555A300F180EC /* DependenciesInjection */,
-				FD744F3F2A05594D00F180EC /* SwiftUI */,
 				FD744F3E2A05594400F180EC /* Foundation */,
+				FD744F3F2A05594D00F180EC /* SwiftUI */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -248,8 +248,8 @@
 		FD744F252A054DFB00F180EC /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				FD744F192A05124B00F180EC /* ViewError.swift */,
 				FD744F262A054E0200F180EC /* AlertError.swift */,
+				FD744F192A05124B00F180EC /* ViewError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -257,9 +257,9 @@
 		FD744F312A0555A300F180EC /* DependenciesInjection */ = {
 			isa = PBXGroup;
 			children = (
-				FD744F322A0555B100F180EC /* InjectionKey.swift */,
-				FD744F342A05560B00F180EC /* InjectedValues.swift */,
 				FD744F362A05562E00F180EC /* Injected.swift */,
+				FD744F342A05560B00F180EC /* InjectedValues.swift */,
+				FD744F322A0555B100F180EC /* InjectionKey.swift */,
 			);
 			path = DependenciesInjection;
 			sourceTree = "<group>";
