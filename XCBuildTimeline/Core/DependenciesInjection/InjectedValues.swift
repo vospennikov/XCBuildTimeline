@@ -10,7 +10,7 @@ import Foundation
 struct InjectedValues {
     private static var current = InjectedValues()
     
-    static subscript<K>(key: K.Type) -> K.Value where K : InjectionKey {
+    static subscript<K>(key: K.Type) -> K.Value where K: InjectionKey {
         get { key.currentValue }
         set { key.currentValue = newValue }
     }

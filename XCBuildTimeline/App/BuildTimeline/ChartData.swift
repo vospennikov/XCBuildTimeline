@@ -40,7 +40,7 @@ extension BuildTimeline.ChartData {
 }
 
 extension BuildTimeline.ChartData {
-    static var preview = BuildTimeline.ChartData(
+    static let preview = BuildTimeline.ChartData(
         bars: [
             .init(name: "FeatureA1", start: 0, end: 14),
             .init(name: "FeatureA2", start: 0, end: 16),

@@ -19,7 +19,7 @@ struct RootProjectSelection: View {
     
     var body: some View {
         HStack {
-            Button("Select", action: presentOpenPanel)
+            Button("Select", action: { presentOpenPanel() })
             Text(placeholder)
                 .onDrop(of: [.fileURL], isTargeted: nil) { (providers: [NSItemProvider]) in
                     handleDropURLs(providers)
@@ -39,6 +39,7 @@ struct RootProjectSelection: View {
         }
     }
     
+    @MainActor
     private func presentOpenPanel() {
         let panel = NSOpenPanel()
         panel.canChooseDirectories = true

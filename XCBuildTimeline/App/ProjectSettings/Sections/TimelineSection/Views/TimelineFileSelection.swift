@@ -21,7 +21,7 @@ struct TimelineFileSelection: View {
     
     var body: some View {
         HStack {
-            Button("Select", action: presentOpenPanel)
+            Button("Select", action: { presentOpenPanel() })
             Text(placeholder)
                 .onDrop(of: [.fileURL], isTargeted: nil) { (providers: [NSItemProvider]) in
                     handleDropURLs(providers)
@@ -41,6 +41,7 @@ struct TimelineFileSelection: View {
         }
     }
     
+    @MainActor
     private func presentOpenPanel() {
         let panel = NSOpenPanel()
         panel.canChooseDirectories = false
